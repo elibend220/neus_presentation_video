@@ -44,13 +44,13 @@ export const MainVideo = () => {
         />
       </Sequence>
 
-      {/* Metrics video - 6 seconds */}
-      <Sequence from={600} durationInFrames={180}>
+      {/* Metrics video - 9 seconds (extended) */}
+      <Sequence from={600} durationInFrames={270}>
         <MetricsCounter />
       </Sequence>
 
       {/* Closing logo at end - 3 seconds */}
-      <Sequence from={780} durationInFrames={90}>
+      <Sequence from={870} durationInFrames={90}>
         <ClosingCard />
       </Sequence>
     </AbsoluteFill>
