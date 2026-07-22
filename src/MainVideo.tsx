@@ -10,56 +10,59 @@ export const MainVideo = () => {
   return (
     <AbsoluteFill>
       <Audio src={staticFile("tension-score.mp3")} />
+
+      {/* Opening hook - 3 seconds */}
       <Sequence from={0} durationInFrames={90}>
         <Hook />
       </Sequence>
 
-      {/* Architecture positioning slide */}
-      <Sequence from={90} durationInFrames={60}>
+      {/* Architecture positioning slide - 3 seconds */}
+      <Sequence from={90} durationInFrames={90}>
         <TextSlide
           line1="Every other platform needs"
           line2="a way into your system"
           fontSize1={50}
-          fontSize2={60}
+          fontSize2={65}
         />
       </Sequence>
 
-      {/* Architecture video */}
-      <Sequence from={150} durationInFrames={150}>
+      {/* Architecture video - 6 seconds */}
+      <Sequence from={180} durationInFrames={180}>
         <ArchitectureContrast />
       </Sequence>
 
-      {/* Metrics positioning slide */}
-      <Sequence from={300} durationInFrames={60}>
+      {/* Metrics positioning slide - 3 seconds */}
+      <Sequence from={360} durationInFrames={90}>
         <TextSlide
           line1="Most tools detect."
           line2="Then wait for you to respond."
           fontSize1={50}
-          fontSize2={60}
+          fontSize2={65}
         />
       </Sequence>
 
-      {/* Metrics video */}
-      <Sequence from={360} durationInFrames={120}>
+      {/* Metrics video - 6 seconds */}
+      <Sequence from={450} durationInFrames={180}>
         <MetricsCounter />
       </Sequence>
 
-      {/* Attack positioning slide */}
-      <Sequence from={480} durationInFrames={60}>
+      {/* Attack positioning slide - 3 seconds */}
+      <Sequence from={630} durationInFrames={90}>
         <TextSlide
           line1="No signature. No history."
           line2="No warning."
           fontSize1={50}
-          fontSize2={60}
+          fontSize2={65}
         />
       </Sequence>
 
-      {/* Attack video */}
-      <Sequence from={540} durationInFrames={120}>
+      {/* Attack video - 6 seconds */}
+      <Sequence from={720} durationInFrames={180}>
         <AttackSimulation />
       </Sequence>
 
-      <Sequence from={660} durationInFrames={90}>
+      {/* Closing logo - 3 seconds */}
+      <Sequence from={900} durationInFrames={90}>
         <ClosingCard />
       </Sequence>
     </AbsoluteFill>
