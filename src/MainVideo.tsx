@@ -1,4 +1,4 @@
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { Hook } from "./scenes/Hook";
 import { ArchitectureContrast } from "./scenes/ArchitectureContrast";
 import { MetricsCounter } from "./scenes/MetricsCounter";
@@ -8,6 +8,7 @@ import { ClosingCard } from "./scenes/ClosingCard";
 export const MainVideo = () => {
   return (
     <AbsoluteFill>
+      <Audio src={staticFile("tension-score.wav")} />
       <Sequence from={0} durationInFrames={90}>
         <Hook />
       </Sequence>
