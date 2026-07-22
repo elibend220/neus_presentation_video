@@ -5,7 +5,7 @@ export const ClosingCard = () => {
   const opacity = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
 
   return (
-    <AbsoluteFill style={{ backgroundColor: "#0b0d12", justifyContent: "center", alignItems: "center" }}>
+    <AbsoluteFill style={{ backgroundColor: "#000000", justifyContent: "center", alignItems: "center" }}>
       <Img src={staticFile("neus-logo.jpg")} style={{ width: 400, opacity }} />
     </AbsoluteFill>
   );
