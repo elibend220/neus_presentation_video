@@ -14,11 +14,11 @@ export const TextSlide = ({
   fontSize2 = 90,
 }: TextSlideProps) => {
   const frame = useCurrentFrame();
-  const line1Opacity = interpolate(frame, [0, 10, 40, 50], [0, 1, 1, 0], {
+  const line1Opacity = interpolate(frame, [0, 3, 80, 90], [0, 1, 1, 0], {
     extrapolateRight: "clamp",
   });
   const line2Opacity = line2
-    ? interpolate(frame, [10, 20, 40, 50], [0, 1, 1, 0], {
+    ? interpolate(frame, [0, 5, 80, 90], [0, 1, 1, 0], {
         extrapolateRight: "clamp",
       })
     : 0;
