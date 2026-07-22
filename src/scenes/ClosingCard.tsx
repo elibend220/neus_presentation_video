@@ -6,7 +6,7 @@ export const ClosingCard = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#0b0d12", justifyContent: "center", alignItems: "center" }}>
-      <Img src={staticFile("neus-logo.png")} style={{ width: 400, opacity }} />
+      <Img src={staticFile("neus-logo.jpg")} style={{ width: 400, opacity }} />
     </AbsoluteFill>
   );
 };
