@@ -16,10 +16,6 @@ simulation, and a closing card.
 npm install
 ```
 
-`src/scenes/ClosingCard.tsx` renders `public/neus-logo.png`, which is not
-included in this repo yet — add the NEUS logo there before rendering, or
-the closing card will show a broken image.
-
 ## Development
 
 ```bash
