@@ -4,6 +4,7 @@ import { ArchitectureContrast } from "./scenes/ArchitectureContrast";
 import { MetricsCounter } from "./scenes/MetricsCounter";
 import { AttackSimulation } from "./scenes/AttackSimulation";
 import { ClosingCard } from "./scenes/ClosingCard";
+import { TextSlide } from "./scenes/TextSlide";
 
 export const MainVideo = () => {
   return (
@@ -12,15 +13,52 @@ export const MainVideo = () => {
       <Sequence from={0} durationInFrames={90}>
         <Hook />
       </Sequence>
-      <Sequence from={90} durationInFrames={210}>
+
+      {/* Architecture positioning slide */}
+      <Sequence from={90} durationInFrames={60}>
+        <TextSlide
+          line1="Every other platform needs"
+          line2="a way into your system"
+          fontSize1={50}
+          fontSize2={60}
+        />
+      </Sequence>
+
+      {/* Architecture video */}
+      <Sequence from={150} durationInFrames={150}>
         <ArchitectureContrast />
       </Sequence>
-      <Sequence from={300} durationInFrames={180}>
+
+      {/* Metrics positioning slide */}
+      <Sequence from={300} durationInFrames={60}>
+        <TextSlide
+          line1="Most tools detect."
+          line2="Then wait for you to respond."
+          fontSize1={50}
+          fontSize2={60}
+        />
+      </Sequence>
+
+      {/* Metrics video */}
+      <Sequence from={360} durationInFrames={120}>
         <MetricsCounter />
       </Sequence>
-      <Sequence from={480} durationInFrames={180}>
+
+      {/* Attack positioning slide */}
+      <Sequence from={480} durationInFrames={60}>
+        <TextSlide
+          line1="No signature. No history."
+          line2="No warning."
+          fontSize1={50}
+          fontSize2={60}
+        />
+      </Sequence>
+
+      {/* Attack video */}
+      <Sequence from={540} durationInFrames={120}>
         <AttackSimulation />
       </Sequence>
+
       <Sequence from={660} durationInFrames={90}>
         <ClosingCard />
       </Sequence>
