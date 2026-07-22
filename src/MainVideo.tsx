@@ -8,7 +8,7 @@ import { ClosingCard } from "./scenes/ClosingCard";
 export const MainVideo = () => {
   return (
     <AbsoluteFill>
-      <Audio src={staticFile("tension-score.wav")} />
+      <Audio src={staticFile("tension-score.mp3")} />
       <Sequence from={0} durationInFrames={90}>
         <Hook />
       </Sequence>
