@@ -1,4 +1,4 @@
-import { AbsoluteFill, Sequence, staticFile } from "remotion";
+import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { Hook } from "./scenes/Hook";
 import { ArchitectureContrast } from "./scenes/ArchitectureContrast";
 import { MetricsCounter } from "./scenes/MetricsCounter";
@@ -9,6 +9,7 @@ import { TextSlide } from "./scenes/TextSlide";
 export const MainVideo = () => {
   return (
     <AbsoluteFill>
+      <Audio src={staticFile("tension-score.mp3")} />
       {/* Attack video at beginning - 5 seconds (full, no text) */}
       <Sequence from={0} durationInFrames={150}>
         <AttackSimulation />
