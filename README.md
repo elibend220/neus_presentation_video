@@ -2,6 +2,20 @@
 
 A professional video presentation system built with **Remotion** and **React**. Create stunning, animated video presentations with scene-based composition, text overlays, integrated video clips, and synchronized audio.
 
+## 🎬 See It in Action
+
+Watch the **Explanation Video** to see the system in action:
+
+> **[explanation.mp4](./explanation.mp4)** - 24-second feature overview showcasing Remotion capabilities with professional music
+
+This video demonstrates:
+- React-based video composition
+- Scene management and transitions
+- Video integration capabilities
+- Text animations and overlays
+- Audio synchronization
+- Professional rendering quality
+
 ## ✨ Features
 
 - **React-based composition**: Build videos as React components
