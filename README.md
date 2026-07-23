@@ -44,14 +44,29 @@ tsconfig.json               # TypeScript configuration
 
 ### Installation
 
+**For using the project:**
+
 ```bash
 # Clone the repository
-git clone <repo-url>
+git clone https://github.com/elibend220/neus_presentation_video.git
 cd neus_presentation_video
 
 # Install dependencies
 npm install
 ```
+
+**For contributing changes back:**
+
+If you want to submit improvements (new scenes, fixes, features):
+
+1. **Fork** the repository (click "Fork" button on GitHub)
+2. **Clone your fork**:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/neus_presentation_video.git
+   cd neus_presentation_video
+   npm install
+   ```
+3. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow
 
 ### Development - Live Preview
 
