@@ -22,7 +22,7 @@ const ExplanationScene = ({ title, subtitle }: { title: string; subtitle: string
 export const ExplanationVideo = () => {
   return (
     <AbsoluteFill>
-      <Audio src={staticFile("groove.wav")} />
+      <Audio src={staticFile("groove.mp3")} />
       {/* Scene 1: What is it */}
       <Sequence from={0} durationInFrames={90}>
         <ExplanationScene title="NEUS Presentation Video" subtitle="Build Amazing Videos" />
