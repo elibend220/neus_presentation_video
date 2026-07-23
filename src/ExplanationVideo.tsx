@@ -2,7 +2,7 @@ import { Composition } from "remotion";
 import { Hook } from "./scenes/Hook";
 import { TextSlide } from "./scenes/TextSlide";
 import { ClosingCard } from "./scenes/ClosingCard";
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Sequence, Audio, staticFile } from "remotion";
 
 const ExplanationScene = ({ title, subtitle }: { title: string; subtitle: string }) => {
   return (
@@ -22,6 +22,7 @@ const ExplanationScene = ({ title, subtitle }: { title: string; subtitle: string
 export const ExplanationVideo = () => {
   return (
     <AbsoluteFill>
+      <Audio src={staticFile("groove.wav")} />
       {/* Scene 1: What is it */}
       <Sequence from={0} durationInFrames={90}>
         <ExplanationScene title="NEUS Presentation Video" subtitle="Build Amazing Videos" />
